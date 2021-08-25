@@ -79,8 +79,6 @@ def find_password():
             password = data[website]["password"]
             messagebox.showinfo(title=website, message=f"Email: {email}\nPassword: {password}")
 
-
-
 # ---------------------------- UI SETUP ------------------------------- #
 
 

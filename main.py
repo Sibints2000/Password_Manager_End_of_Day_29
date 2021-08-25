@@ -49,6 +49,11 @@ def save():
             with open("data.json", "r") as data_file:
                 # Reading old data
                 data = json.load(data_file)
+        except FileNotFoundError:
+            with open("data.json" "w") as data_file:
+
+
+
                 # Updating old data with new data
                 data.update(new_data)
 

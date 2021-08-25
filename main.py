@@ -64,6 +64,8 @@ def save():
             password_entry.delete(0, END)
 
 # ---------------------------- FIND PASSWORD ------------------------------- #
+
+
 def find_password():
     website = website_entry.get()
 

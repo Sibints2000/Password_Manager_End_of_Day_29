@@ -71,6 +71,9 @@ def find_password():
     try:
         with open("data.json") as data_file:
             data = json.load(data_file)
+    except FileNotFoundError:
+
+
             if website in data:
                 email = data[website]["email"]
                 password = data[website]["password"]

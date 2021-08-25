@@ -56,10 +56,10 @@ def save():
             # Updating old data with new data
             data.update(new_data)
 
-        with open("data.json", "w") as data_file:
-            # Saving updated data
-            json.dump(new_data, data_file, indent=4)
-
+            with open("data.json", "w") as data_file:
+                # Saving updated data
+                json.dump(new_data, data_file, indent=4)
+        finally:
             website_entry.delete(0, END)
             password_entry.delete(0, END)
 

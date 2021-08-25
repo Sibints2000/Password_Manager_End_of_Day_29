@@ -72,6 +72,8 @@ def find_password():
         data = json.load(data_file)
         if website in data:
             email = data[website]["email"]
+            password = data[website]["password"]
+
 
 
 # ---------------------------- UI SETUP ------------------------------- #

@@ -73,8 +73,7 @@ def find_password():
         if website in data:
             email = data[website]["email"]
             password = data[website]["password"]
-
-
+            messagebox.showinfo(title=website, message=f"Email: {email}\nPassword: {password}")
 
 # ---------------------------- UI SETUP ------------------------------- #
 
